@@ -10,11 +10,10 @@ package ca2.gnomesltd;
  */
 public class Employee {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+    //
+    private String name;
+    private String email;
+    private int empNum;
 }
+    
+
