@@ -35,7 +35,7 @@ public class EmployeeTest {
     System.out.println("Employees with employee numberes larger than " + m + " are: ");
     for (Employee emp : projectGroup) {
         if (emp.getEmpNum()> m){
-            System.out.println("Employee number: " + emp.getEmpNum());    
+            System.out.println("Employee name: " + emp.getName());    
         }
     }  
   }
