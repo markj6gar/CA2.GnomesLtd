@@ -8,7 +8,7 @@ package ca2.gnomesltd;
  *
  * @author Mark
  */
-public class CA2GnomesLtd {
+public class Employee {
 
     /**
      * @param args the command line arguments
