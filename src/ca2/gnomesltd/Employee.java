@@ -45,12 +45,15 @@ public class Employee {
     public void setEmail(String email) {
       if (email.length() > 3) { 
           this.email = email;
-      } else {
+          
+        } else {
           System.out.println("Email must be more than 3 characthers.");
-      }
-      }
+        }
     }
-    
+    //getNextEmpNum() - to return the current value of nextEmpNum
+    public static int getNextEmpNum() {
+        return nextEmpNum;
+    }
 }
     
 

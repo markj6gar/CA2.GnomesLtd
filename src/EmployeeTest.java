@@ -1,4 +1,7 @@
 
+import ca2.gnomesltd.Employee;
+
+
 
 
 /*
@@ -13,17 +16,28 @@
 public class EmployeeTest {
      public static void main(String[] args) {
          
-        //creating the objects 
-        Employee emp1 = new Employee ("Joe Bloggs","jb@gmail.com ");
-        Employee emp1 = new Employee ("Ann Banana","ab@gmail.com");
-        Employee emp1 = new Employee ("Tom Thumb","tt@gmail.com");
+    //creating the objects 
+    Employee emp1 = new Employee ("Joe Bloggs","jb@gmail.com ");
+    Employee emp2 = new Employee ("Ann Banana","ab@gmail.com");
+    Employee emp3 = new Employee ("Tom Thumb","tt@gmail.com");
          
-        // creating the array with set size
-        Employee[] projectGroup = new Employee[3];
+    // creating the array and filling  it with objects
+    Employee[] projectGroup = {emp1, emp2, emp3};
          
-        // putting the objects into array
-        projectGroup[0] = emp1;
-        projectGroup[1] = emp2;
-        projectGroup[2] = emp3;        
-     }
+         System.out.println("Value of the next employee number is: " + Employee.getNextEmpNum());    
+       
+         
+    // code to search and display the name of each of the employees in the projectGroup array, 
+    //who have an employee number above the value stored in a variable called m.     
+    
+    int m = 2; //1 is a example value 
+    
+    System.out.println("Employees with employee numberes larger than " + m + " are: ");
+    for (Employee emp : projectGroup) {
+        if (emp.getEmpNum()> m){
+            System.out.println(emp.getEmpNum());    
+        }
+    }  
+  }
 }
+     
