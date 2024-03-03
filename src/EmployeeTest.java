@@ -30,12 +30,12 @@ public class EmployeeTest {
     // code to search and display the name of each of the employees in the projectGroup array, 
     //who have an employee number above the value stored in a variable called m.     
     
-    int m = 2; //1 is a example value 
+    int m = 1; //1 is a example value 
     
     System.out.println("Employees with employee numberes larger than " + m + " are: ");
     for (Employee emp : projectGroup) {
         if (emp.getEmpNum()> m){
-            System.out.println(emp.getEmpNum());    
+            System.out.println("Employee number: " + emp.getEmpNum());    
         }
     }  
   }
