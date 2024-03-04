@@ -1,3 +1,5 @@
+package ca2.gnomesltd;
+
 
 import ca2.gnomesltd.Employee;
 
