@@ -5,6 +5,7 @@
 package ca2.gnomesltd;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 
 // Creating company class to keep company data well managed and
@@ -37,7 +38,16 @@ public class Company {
         return staff.size();
     }
     
-    //
+    public void listEmployees(int m) {
+        System.out.println("Employees with employee number above " + m + " are:");
+        Iterator<Employee> it = staff.iterator();
+        while (it.hasNext()) {
+            Employee emp = it.next();
+            if (emp.getEmpNum() > m) {
+                System.out.println(emp.getName());
+            }
+        }
+    }
     
 }
 
