@@ -9,8 +9,11 @@ package ca2.gnomesltd;
  * @author Mark
  */
 public class Manager extends Employee {
+    private String username;
+    private String password;
     
-    public Manager(String username, String password) {
+    public Manager(String name, String email, String username, String password) {
+        super (name, email);
         this.username = username;
         this.password = password;
     }
@@ -19,10 +22,15 @@ public class Manager extends Employee {
         return username;
     }
     public void setUsername(String username) {
-        this username = username;
+        this.username = username;
     }
     
     public String getPassword() {
         return password;
     }
+    public void setPassword(String password) {
+        this.password = password;
+    }
+       
+    
 }
