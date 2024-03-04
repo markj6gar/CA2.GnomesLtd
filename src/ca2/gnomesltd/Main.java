@@ -15,12 +15,17 @@ import ca2.gnomesltd.Employee;
  *
  * @author Mark
  */
-public class EmployeeTest {
+public class Main {
     
-    //
+    // GitHub rep: https://github.com/markj6gar/CA2.GnomesLtd/
     
     
      public static void main(String[] args) {
+    
+    Manager mang = new Manager ("Boss Man", "bm@gmail.com", "Gnomeo", "smurf");
+     
+    Company comp = new Company ("Business Gnómes Ltd"); 
+         
          
     //creating the objects 
     Employee emp1 = new Employee ("Joe Bloggs","jb@gmail.com ");
